@@ -1,5 +1,3 @@
-package test;
-
 import com.google.inject.AbstractModule;
 
 public class StatisticsModule extends AbstractModule{

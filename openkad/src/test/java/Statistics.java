@@ -1,5 +1,3 @@
-package test;
-
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.google.inject.Inject;

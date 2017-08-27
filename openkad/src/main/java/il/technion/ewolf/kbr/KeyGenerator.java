@@ -11,10 +11,12 @@ import com.google.inject.Injector;
 public class KeyGenerator {
 
 	public static void main(String[] args) throws Exception {
-	
+
+		final KadNetModule module = new KadNetModule()
+				.setProperty("openkad.keyfactory.keysize", "7");
+
 		Injector injector = Guice.createInjector(
-			new KadNetModule()
-				.setProperty("openkad.keyfactory.keysize", "7")
+				module
 			);
 		
 		KeyFactory kf = injector.getInstance(KeyFactory.class);
