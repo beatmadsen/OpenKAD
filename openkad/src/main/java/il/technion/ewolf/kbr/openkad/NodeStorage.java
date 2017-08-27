@@ -11,11 +11,11 @@ public interface NodeStorage {
 	 * accordingly.
 	 * Invoke this method after creating the entire system
 	 */
-	public void registerIncomingMessageHandler();
+	void registerIncomingMessageHandler();
 	/**
 	 * 
 	 * @return a list containing all the nodes in the data structure
 	 */
-	public List<Node> getAllNodes();
+	List<Node> getAllNodes();
 
 }

@@ -17,7 +17,7 @@ public interface Bucket {
 	 * Adds a new node to the bucket
 	 * @param n the new node
 	 */
-	public void insert(KadNode n);
+	void insert(KadNode n);
 
 	/**
 	 * Adds all nodes in bucket to the given collection
@@ -30,5 +30,5 @@ public interface Bucket {
 	 * insert was invoked 
 	 * @param n the dead node
 	 */
-	public void markDead(Node n);
+	void markDead(Node n);
 }
